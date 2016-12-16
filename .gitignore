@@ -1,0 +1,6 @@
+controllers/*.pyc
+venv/
+static/images
+*.pyc
+config.py
+deploy.sh
