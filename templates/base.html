@@ -2,14 +2,49 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Joshua Agby</title>
 </head>
 <body>
+    <!-- Navbar -->
+    <div class="w3-top">
+    <ul class="w3-navbar w3-blue w3-card-2 w3-left-align">
+      <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+        <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      </li>
+      <li><a href="#" class="w3-hover-none w3-hover-text-grey w3-padding-large">HOME</a></li>
+      <li class="w3-hide-small"><a href="http://www.joshagby.com" class="w3-padding-large">ABOUT ME</a></li>
+      <li class="w3-hide-small"><a href="joshagby.com" class="w3-padding-large">PROJECTS</a></li>
+      <li class="w3-hide-small"><a href="joshagby.com" class="w3-padding-large">RESUME</a></li>
+      <li class="w3-hide-small w3-dropdown-hover">
+        <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More">MORE<i class="fa fa-caret-down"></i></a>
+        <div class="w3-dropdown-content w3-white w3-card-4">
+          <a href="#">Extras</a>
+        </div>
+      </li>
+      </ul>
+    </div>
 
-  <div class="center">
+    <!-- Alternate Navbar for small screens -->
+    <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+      <ul class="w3-navbar w3-left-align w3-black">
+        <li><a class="w3-padding-large" href="TBD">TBD</a></li>
+      </ul>
+    </div>
+
     {% block content %}{% endblock %}
-  </div>
+
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-32 w3-center w3-opacity w3-light-grey w3-large">
+        <a href="https://www.facebook.com/josh.agby" target="_blank"><i class="fa fa-facebook-official w3-hover-text-indigo w3-xxlarge"></i></a>
+        <a href="https://github.com/joshagby" target="_blank"><i class="fa fa-github w3-hover-text-indigo w3-xxlarge"></i></a>
+        <a href="https://www.linkedin.com/in/joshua-agby-886550b2" target="_blank"><i class="fa fa-linkedin w3-hover-text-indigo w3-xxlarge"></i></a>
+        <br><br><i class="w3-large">Last Updated: December 17, 2016</i>
+    </footer>
+
+
   <script type="text/javascript" src="/static/js/main.js"></script>
 </body>
 

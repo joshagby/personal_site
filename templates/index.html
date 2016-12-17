@@ -1,20 +1,17 @@
 {% extends "base.html" %}
 {% block content %}
-    <head>
-            <meta name="description" content="Joshua Agby Personal Website">
-            <meta name="keywords" content="HTML,CSS,JSS,Python,Flask,Jinja">
-            <meta name="author" content="Joshua Agby">
-    </head>
-    <title>Joshua Agby personal site main page</title>
-    <h1>Joshua Agby Personal Site</h1>
+      <!-- Main Content (Home page Content) -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="home">
+    <h2 class="w3-wide">Joshua Agby</h2>
+      <div class="w3-row">
+        <img src="/static/images/profile.jpg" class="w3-circle" style="width:35%">
+    </div>
+    <p class="w3-opacity"><i>Young Engineer Extraordinaire</i></p>
+    <p class="w3-justify">Welcome to my personal website! I am going to try and continue to grow this site in the coming months,
+        hopefully adding some fun new projects and other flashy odds and ends. For the time being I hope to use this as a platform to advertise myself
+        to whomever it may concern.</p>
+      <p class="w3-justify">Website created using Jinja and Flask, along with W3.CSS</p>
+  </div>
 
-    <div><em>
-        Coming soon, early 2017
-    </em></div>
 
-    <footer>
-        <p>Created by: Joshua Agby</p>
-        <p>Contact information: <a href="mailto:joshagby@umich.edu">joshagby@umich.edu</a></p>
-        <p>Last Updated: December 15, 2016</p>
-    </footer>
 {% endblock %}
