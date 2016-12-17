@@ -1,6 +1,7 @@
 controllers/*.pyc
 venv/
-static/images
 *.pyc
+*.idea
+*.DS_Store*
 config.py
 deploy.sh
