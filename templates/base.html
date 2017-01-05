@@ -14,14 +14,13 @@
       <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
         <a class="w3-padding-large" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
       </li>
-      <li><a href="#" class="w3-hover-none w3-hover-text-grey w3-padding-large">HOME</a></li>
+      <li><a href="{{ url_for('main.main_route') }}" class="w3-hover-none w3-hover-text-grey w3-padding-large">HOME</a></li>
       <li class="w3-hide-small"><a href="http://www.joshagby.com" class="w3-padding-large">ABOUT ME</a></li>
-      <li class="w3-hide-small"><a href="joshagby.com" class="w3-padding-large">PROJECTS</a></li>
-      <li class="w3-hide-small"><a href="joshagby.com" class="w3-padding-large">RESUME</a></li>
+      <li class="w3-hide-small"><a href="#" class="w3-padding-large">RESUME</a></li>
       <li class="w3-hide-small w3-dropdown-hover">
-        <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More">MORE<i class="fa fa-caret-down"></i></a>
+        <a href="javascript:void(0)" class="w3-hover-none w3-padding-large" title="More">PROJECTS<i class="fa fa-caret-down"></i></a>
         <div class="w3-dropdown-content w3-white w3-card-4">
-          <a href="#">Extras</a>
+          <a href="{{ url_for('dice.dice_route') }}">Dice Game</a>
         </div>
       </li>
       </ul>
@@ -41,7 +40,7 @@
         <a href="https://www.facebook.com/josh.agby" target="_blank"><i class="fa fa-facebook-official w3-hover-text-indigo w3-xxlarge"></i></a>
         <a href="https://github.com/joshagby" target="_blank"><i class="fa fa-github w3-hover-text-indigo w3-xxlarge"></i></a>
         <a href="https://www.linkedin.com/in/joshua-agby-886550b2" target="_blank"><i class="fa fa-linkedin w3-hover-text-indigo w3-xxlarge"></i></a>
-        <br><br><i class="w3-large">Last Updated: December 17, 2016</i>
+        <br><br><i class="w3-large">Last Updated: January 4, 2017</i>
     </footer>
 
 
