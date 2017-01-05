@@ -1,0 +1,79 @@
+{% extends "base.html" %}
+{% block content %}
+  <head>
+    <link rel="stylesheet" href="/static/css/dice.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/static/js/dice.js"></script>
+    <script src="/static/js/buildHTML.js"></script>
+  </head>
+
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="dice">
+
+    <div id="gameInfo">
+      <p>Dice Game, created by Joshua Agby</p>
+      <p>
+        <b>Rules Overview:</b> <br>
+        <table>
+          <tr>
+            <th>Objective</th>
+            <td>Score more points than the computer. The game consists of three rounds. Your total score will be the sum of your points from each round.</td>
+          </tr>
+          <tr>
+            <th>Round Rules</th>
+            <td>Each round you may roll a single die as many times as you wish. Your score for that round will be the sum of all dice rolls after you decide to stop. If at any time you roll a <i>one</i>, your turn will end and you will receive no points for that round. This is called a <i>bust</i>.</td>
+          </tr>
+        </table>
+
+        <br> Good Luck! <br>
+      </p>
+    </div>
+
+    <p id="statusText"></p>
+
+    <div id="diceDisplay"></div>
+
+    <div id="playButtons">
+      <form action="javascript:rollDice('1');" id="rollDiceForm">
+        <button type="submit" id="rollDiceButton">Roll Dice</button>
+      </form>
+      <form action="javascript:endRound();" id="endRoundForm">
+        <button type="submit" id="endRoundButton">End Turn</button>
+      </form>
+    </div>
+
+    <br>
+
+    <table id="scoreTable">
+      <tr>
+        <th>Round:</th>
+        <th>Your Score:</th>
+        <th>Opponent Score:</th>
+      </tr>
+      <tr>
+        <td>One</td>
+        <td id=r1p1>0</td>
+        <td id=r1p2>0</td>
+      </tr>
+      <tr>
+        <td>Two</td>
+        <td id=r2p1>0</td>
+        <td id=r2p2>0</td>
+      </tr>
+      <tr>
+        <td>Three</td>
+        <td id=r3p1>0</td>
+        <td id=r3p1>0</td>
+      </tr>
+      <tr>
+        <th>TOTAL</th>
+        <th id=p1tot>0</th>
+        <th id=p2tot>0</th>
+      </tr>
+    </table>
+    <br>
+    <form action="javascript:newGame();" id="newGameForm">
+      <button type="submit" id="newGameButton">New Game</button>
+    </form>
+  </div>
+
+{% endblock %}

@@ -1,17 +1,23 @@
 {% extends "base.html" %}
 {% block content %}
       <!-- Main Content (Home page Content) -->
+  <!-- spacer --> <br>
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="home">
     <h2 class="w3-wide">Joshua Agby</h2>
       <div class="w3-row">
         <img src="/static/images/profile.jpg" class="w3-circle" style="width:35%">
-    </div>
-    <p class="w3-opacity"><i>Young Engineer Extraordinaire</i></p>
-    <p class="w3-justify">Welcome to my personal website! I am going to try and continue to grow this site in the coming months,
-        hopefully adding some fun new projects and other flashy odds and ends. For the time being I hope to use this as a platform to advertise myself
-        to whomever it may concern.</p>
-      <p class="w3-justify">Website created using Jinja and Flask, along with W3.CSS</p>
+      </div>
+    <p class="w3-opacity"><i>Mechanical and Computer Science Engineering Student</i></p>
   </div>
+
+<style>
+body {
+    background-image: url("/static/images/aurum.jpg");
+    background-color: #cccccc;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+</style>
 
 
 {% endblock %}
