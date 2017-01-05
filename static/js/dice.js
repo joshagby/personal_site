@@ -68,7 +68,7 @@ function updateScoreTable() {
 	$("#r3p1").html(playerScoreArray[2].toString());
 	$("#r3p2").html(opponentScoreArray[2].toString());
 	$("#p1tot").html(sumScore(playerScoreArray).toString());
-	$("#p2tot").html(sumScore(opponentScoreArray.toString());
+	$("#p2tot").html(sumScore(opponentScoreArray).toString());
 }
 
 // sum the values of an array (i.e. score array)
