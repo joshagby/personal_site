@@ -1,5 +1,4 @@
 from flask import *
-import extensions
 
 main = Blueprint('main', __name__, template_folder='templates')
 

@@ -1,5 +1,4 @@
 from flask import *
-import extensions
 from random import *
 
 api_dice_roll = Blueprint('api_dice_roll', __name__)

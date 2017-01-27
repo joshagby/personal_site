@@ -1,6 +1,5 @@
 from flask import Flask, render_template, session
 import controllers
-import extensions
 import config
 import api
 
@@ -17,6 +16,7 @@ app = Flask(__name__, template_folder='templates')
 app.register_blueprint(controllers.main, url_prefix=prefix)
 app.register_blueprint(controllers.dice, url_prefix=prefix)
 app.register_blueprint(api.api_dice_roll, url_prefix=prefix)
+app.register_blueprint(controllers.resume, url_prefix=prefix)
 
 # Listen on external IPs
 # Set host and port information in config.py file

@@ -1,5 +1,4 @@
 from flask import *
-import extensions
 
 dice = Blueprint('dice', __name__, template_folder='templates')
 
